@@ -1,0 +1,374 @@
+#container {
+    position: relative;
+    margin: -120px auto -295px;
+    width: 100%;
+    min-height: 100%;
+}
+
+html, body, div, span, object, iframe, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, fieldset, legend, input, label
+, button, textarea, select, textarea, input, table, caption, tbody, tfoot, thead, tr, th, td, b, i, dl, dt, dd, ol, ul, li, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, time, mark, audio, video, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans KR';
+}
+a {text-decoration:none; color:#000;}
+#content {
+    position: relative;
+    width: 1260px;
+    margin: 120px auto 0;
+    padding: 650px 30px 455px;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary {
+    display: block;
+}
+
+.linemap > dd > ul > li {
+    display: block;
+    float: left;
+}
+
+.linemap > dd > ul > li {
+    padding: 0 30px;
+  }
+
+#content > .header {
+    position: relative;
+    min-width: 1200px;
+    height: 490px;
+    padding: 125px 0 0;
+    margin: -650px 0 160px;
+    text-align: center;
+    color: #fff;
+    z-index: 8;
+}
+
+#content[data-page^="0401"] > .header:before {
+    background-image: url(../img/visual_recruit01.jpg);
+}
+
+#content > .header:before {
+    background: #282828 url(../img/visual_basic.jpg) no-repeat 50% 100%;
+}
+#content > .header:before, #content > .header:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 490px;
+    width: 1920px;
+    margin: 0 0 0 -960px;
+    z-index: -1;
+}
+
+#content > .header h1, #content > .header > p:first-child > strong {
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-size: 50px;
+    line-height: 94px;
+    font-weight: bolder;
+}
+
+#content > .header #aside {
+    position: absolute;
+    left: 50%;
+    top: 420px;
+    width: 1260px;
+    margin: 0 0 0 -630px;
+    z-index: 8;
+}
+#content > .header #aside:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    min-width: 1260px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.25);
+    z-index: -1;
+}
+
+#content > .header:after {
+    -webkit-animation: aniPattern1 10s ease-in-out both;
+    animation: aniPattern1 10s ease-in-out both;
+}
+
+#content > .header:after {
+    background: url(../img/visual.png) no-repeat 50% 100%;
+    animation:aniPattern1 10s ease-in-out both;
+}
+@keyframes aniPattern1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.linemap {
+    position: relative;
+    margin: 0 auto;
+    height: 70px;
+    padding: 0 70px 0 0;
+}
+
+
+.linemap > dt {
+    overflow: hidden;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.linemap > dd {
+    text-align: left;
+}
+
+
+.recruit-list {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 114px -120px;
+}
+
+.recruit-list:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 131px;
+    left: 25%;
+    width: 60%;
+    height: 40px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+
+.recruit-list > li + li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 159px;
+    left: -142px;
+    margin-top: -10px;
+    width: 164px;
+    height: 21px;
+    border-top: 1px solid #ff6600;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.recruit-list > li {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 120px;
+    width: 320px;
+    text-align: center;
+}
+
+.recruit-list > li > strong {
+    position: relative;
+    display: block;
+    height: 320px;
+    margin: 0 0 35px;
+    padding: 220px 0 0;
+    font-size: 22px;
+    color: #282828;
+}
+
+.recruit-list > li:nth-child(1) > strong:before {
+    background-position: 0 -60px;
+}
+
+.recruit-list > li > strong:before {
+    top: 80px;
+    margin: 0 0 0 -70px;
+    width: 140px;
+    height: 140px;
+    background: url(../img/img_set2.png) no-repeat 0 -60px;
+    z-index: 3;
+}
+
+
+.recruit-list > li > strong:before, .recruit-list > li > strong:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+
+
+.recruit-list > li > strong:after {
+    top: 20px;
+    margin: 0 0 0 -140px;
+    width: 280px;
+    height: 280px;
+    border-radius: 280px;
+    border: 1px solid #ff6600;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.recruit-list > li > strong:before, .recruit-list > li > strong:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+
+.list-toggle1.t1 {
+    position: relative;
+    min-height: 30px;
+    padding: 0 0 0 360px;
+    border-top: 1px solid #282828;
+}
+
+.list-toggle1 {
+    margin: 20px 0 0;
+}
+
+.list-toggle1.t1 > .heading {
+    float: left;
+    margin: 0 0 0 -360px;
+    padding: 24px 0;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.list-toggle1.t1 > .heading span {
+    color: #ff6600;
+}
+
+.list-toggle1.t1 > dl:nth-of-type(1) {
+    border-top: 0;
+}
+
+.list-toggle1 > dl {
+    position: relative;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+.list-toggle1 > dl > dt, .list-toggle1 > dl > dt .btn:after {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.list-toggle1 > dl > dt {
+    position: relative;
+    font-family: 'Noto Sans KR';
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.list-toggle1 > dl > dt .btn {
+    display: block;
+    width: 100%;
+    padding: 26px 110px 26px 40px;
+    text-align: left;
+}
+a:link, a:hover {
+    text-decoration: none;
+}
+
+
+a, a:visited {
+    color: inherit;
+}
+
+.list-toggle1 > dl > dt .btn:before {
+    width: 28px;
+    height: 1px;
+    margin: -1px 0 0;
+}
+
+.list-toggle1 > dl > dt .btn:before, .list-toggle1 > dl > dt .btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 50%;
+    background: #000;
+}
+
+.list-toggle1 > dl > dt, .list-toggle1 > dl > dt .btn:after {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.list-toggle1 > dl > dt .btn:after {
+    width: 1px;
+    height: 28px;
+    margin: 0 13px 0 0;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+.list-toggle1 > dl > dt .btn:before, .list-toggle1 > dl > dt .btn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 50%;
+    background: #000;
+}
+
+
+.list-toggle1 > dl.active > dd {
+    display: block;
+}
+
+.list-toggle1 > dl > dd {
+    display: none;
+    padding: 20px 30px 54px 40px;
+    line-height: 28px;
+}
+
+.list-toggle1 > dl ~ dl {
+    margin-top: -1px;
+}
+
+.list-toggle1 > dl {
+    position: relative;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+
+.list-toggle1.t1 {
+    position: relative;
+    min-height: 30px;
+    padding: 0 0 0 360px;
+    border-top: 1px solid #282828;
+}
+
+.list-toggle1 + .list-toggle1 {
+    margin: 120px 0 0;
+}
+
+
+.list-toggle1.t1 > .heading {
+    float: left;
+    margin: 0 0 0 -360px;
+    padding: 24px 0;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: bold;
+}

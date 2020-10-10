@@ -1,0 +1,790 @@
+
+@charset "UFT-8";
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+/* 리셋 */
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../Pf/font/NotoSans-Bold.ttf),
+         url(../Pf/font/NotoSans-BoldItalic.ttf),
+         url(../Pf/font/NotoSans-Italic.ttf),
+         url(../Pf/font/NotoSans-Regular.ttf);
+}
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed,
+
+figure, figcaption, footer, header, hgroup,
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    font-size: 100%;
+
+    font: inherit;
+
+    vertical-align: baseline;
+
+    box-sizing: border-box;
+
+    font-family: 'Noto Sans KR', sans-serif;
+
+
+}
+a {border:none; text-decoration:none; color:#000;}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+
+footer, header, hgroup, menu, nav, section {
+
+    display: block;
+
+}
+
+body {
+
+    line-height: 1;
+
+    font-family: 'Noto Sans', sans-serif ;
+
+
+
+
+}
+
+ol, ul {
+
+    list-style: none;
+
+}
+p {
+    letter-spacing: -0.48px;
+    text-decoration: none solid rgb(40, 40, 40);
+    color: #282828;
+}
+blockquote, q {
+
+    quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+    content: '';
+
+    content: none;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+    border-spacing: 0;
+
+}
+
+/* 리셋 */
+.Wrap {
+    background-image: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_com01.jpg);
+    width: 100%;
+    height: 490px;
+    overflow: hidden;
+    position: relative;
+}
+.Wrap::after {
+    position: absolute;
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual.png) no-repeat 50% 100%;
+    width: 100%;
+    height: 490px;
+    content: ' ';
+    top: 0;
+    animation:aniPattern1 10s ease-in-out both;
+
+}
+@keyframes aniPattern1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+.Tcontent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Tcontent > div > h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.Tcontent > div > p {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: bold;
+}
+/* .Tcontent >.nav {
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    background: rgba(0 , 0, 0, 0.25);
+    height: 70px;
+    margin-top: 420px;
+    bottom: 0;
+} */
+.Tcontent .nav.nav-fixed{
+    position: fixed;
+    top: -430px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: #000;
+    transition: background 0.6s;
+    /* bottom: auto; */
+}
+.contentNav-fixed {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 333;
+}
+.nav {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 200;
+
+    background: rgba(0 , 0, 0, 0.25);
+    height: 70px;
+    margin-top: 420px;
+
+}
+
+.navWrap {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.navWrap > ul > li {
+    color: #fff;
+    float: left;
+    line-height: 70px;
+}
+.navWrap > ul > li:first-child {
+    padding: 0 32px;
+
+}
+.navWrap > ul > li > span {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0 54px 0 30px;
+}
+
+.navWrap > ul > li > span> button {
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0 none;
+    cursor: pointer;
+
+}
+.navWrap > ul > li > span> button::before {
+    width: 15px;
+    height: 15px;
+    background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_set1.png) no-repeat -40px 0px;
+    position: absolute;
+    content: ' ';
+    display: block;
+    margin: 7px 0 0 ;
+    top: 20px;
+    right: 25px;
+}
+.navWrap > ul > li > span> button::after {
+    width: 1px;
+    height: 10px;
+    margin: 0 7px 0 0;
+    background: #fff;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    position: absolute;
+    content: ' ';
+    display: block;
+    right: 25px;
+    /* top:20px */
+}
+.menu {
+    opacity: 1;
+}
+.expand {
+    display: block;
+}
+.expand > span{
+    float: left;
+    position: relative;
+    display: none;
+}
+.expand > span > .Bt{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgba(255,255,255,0);
+    background: rgba(255,255,255,0);
+    z-index: 2;
+}
+.menuWrap {
+    float: left;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    padding: 0 10px;
+    opacity: 1;
+}
+.menuWrap > li{
+    float: left;
+    opacity: 0;
+}
+.menuWrap > li a{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+}
+.menuWrap > li > a::before{
+    position: absolute;
+    content: ' ';
+    display: block;
+}
+.contentNav{
+   width: 1260px;
+   margin: 0 auto;
+   border-bottom: 1px solid #fafafa;
+   background-color: #fff;
+}
+.contentNav > ul {
+    /* width: 1260px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: table;
+    align-items: center;
+
+}
+.contentNav > ul li {
+    display: table-cell;
+    height: 80px;
+    padding: 18px 0 19px;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 50%;
+}
+.select {
+    border-bottom: 1px solid #ff6600;
+}
+.contentNavWrap {
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+.contentNav > ul li > a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contentNav > ul li > a:hover{
+    color: #ff6600;
+    transition: color 0.3s;
+}
+.select > a{
+    color: #ff6600;
+}
+.noSelec > a {
+    color: #000;
+}
+
+.textT {
+    text-align: center;
+    margin-top: 170px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: normal;
+    letter-spacing: -0.05em;
+    width: 100%;
+    padding-bottom: 173px;
+}
+.history {
+    position: relative;
+    height: 354px;
+    margin: 0 auto;
+    padding: 300px 0 0 ;
+    overflow: hidden;
+    z-index: 1;
+  margin-bottom: 120px;
+
+
+  /* padding-top: 80px; */
+
+}
+.history_list {
+    border-top: 1px solid #c9c8c8;
+    margin-top: 60px;
+    padding-top: 100px;
+}
+.area-headline {
+    position: absolute;
+    left: 0; right: 0;
+    margin-top: 1250px;
+
+    bottom: 0;
+    height: 80px;
+    margin: 0 auto;
+}
+.area-headline::before {
+    display: block;
+    content: ' ';
+    position: absolute;
+}
+.history-fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 25%;
+    top: 130px;
+    bottom: 0;
+    height: 80px;
+    background: url(https://www.hanwhasystems.com/resources/img/pc/com/visual_pattern2.png) no-repeat center 0;
+    z-index: 333;
+}
+.history::before {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/com/visual_pattern2.png) no-repeat 50% 23px;
+    width: 100%;
+    height: 254px;
+    position: absolute;
+    content: ' ';
+    z-index: -1;
+    bottom: 0;
+    top: 0;
+
+}
+.history_Y-fixed {
+    position: fixed;
+    top: 210px;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    z-index: 333;
+   background-color: #fafafa;
+
+}
+.history > ul {
+    margin: 0 auto;
+    /* position: absolute;
+    content: ' '; */
+    width: 100%;
+    height: 50px;
+   display: flex;
+   align-items: center;
+   /* padding-top: 340px; */
+   justify-content: center;
+   z-index: 10;
+   background-color: #fafafa;
+
+}
+.history > ul li {
+    /* float: left; */
+    padding: 0 10px;
+
+
+}
+.history > ul li > a{
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+.history > ul li > a:hover{
+    color:#ff6600;
+    border-bottom: 1px solid #ff6600;
+    transition: color 0.3s;
+}
+.history li.select_H  a {
+    color: #ff6600;
+}
+.history_1{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    padding: 55px 0 55px;
+    border-bottom: 1px solid #c9c8c8;
+
+    padding-bottom: 200px;
+    /* border-top: 1px solid #000; */
+
+
+}
+
+.headLine {
+    width: 100%;
+    display: table;
+    /* height: 270px; */
+    text-align: center;
+    /* padding: 110px 0; */
+
+
+}
+.headLineWrap {
+    margin: 0 auto;
+    width: 1200px;
+}
+.headLine_1 {
+    width: 100%;
+    display: table;
+    /* height: 270px; */
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 116px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+
+}
+.headLine-fixed {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    background: rgba(255, 255, 255, 0);
+    /* height: 80px; */
+}
+.headLine_2-fixed {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    background: rgba(255, 255, 255, 0);
+    /* height: 80px; */
+}
+.headLine_3-fixed {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    background: rgba(255, 255, 255, 0);
+    /* height: 80px; */
+}
+.headLine_4-fixed {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    background: rgba(255, 255, 255, 0);
+    /* height: 80px; */
+}
+.headLine_5-fixed {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    background: rgba(255, 255, 255, 0);
+    /* height: 80px; */
+}
+.headLine::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_set1.png) no-repeat
+    0 -160px;
+    width: 12px;
+    height: 34px;
+    position: absolute;
+    content: ' ';
+    display: block;
+    left: 50%;
+    background-color: #fff;
+}
+#headLine_1::after {
+    margin: -30px 0 0 -6px;
+
+}
+#headLine_2::after {
+    margin: -2px -10px 0 -6px;
+
+}
+#headLine_3::after {
+    margin: -2px -15px 0 -6px;
+
+}
+#headLine_4::after {
+    margin: -2px -10px 0 -6px;
+
+}#headLine_5::after {
+    margin: -2px -10px 0 -6px;
+
+}
+#headLine_3 > .left > p {
+    color: #fff;
+}
+#headLine_5 > .right > p {
+    color: #fff;
+}
+.left {
+    display: table-cell;
+    text-align: right;
+    padding-right: 100px;
+    font-size: 28px;
+    padding-left: 82px;
+    right: 50%;
+    min-width: 600px;
+    /* color: #ff6600; */
+    /* font-weight: bold; */
+    /* width: 45%; */
+}
+.left > p {
+    background: #fff;
+}
+.right {
+
+    display: table-cell;
+    text-align: left;
+    padding-left: 100px;
+    font-size: 28px;
+    left: 50%;
+    min-width: 600px;
+    /* color: #ff6600; */
+    /* font-weight: bold; */
+
+    /* width: 45%; */
+}
+.right > p {
+    background: #fff;
+}
+.history_list {
+
+}
+.history_list > li > strong {
+    position: relative;
+    font-size: 50px;
+    z-index: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 10%;
+}
+.history_list > li > p {
+    font-size: 28px;
+    line-height: 55px;
+
+
+}
+.history_list > li > p:first-child {
+    margin: 17px 0 17px 0;
+}
+.history_list > li {
+    margin: 150px 0 0;
+
+}
+.history_list > li:nth-child(2) > strong::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    top: -110px;
+    left: 50%;
+    display: block;
+    width: 1px;
+    margin: 0 0 10px;
+    background: #282828;
+}
+.history_list > li > p > span {
+    font-weight: bolder;
+}
+.history_list > li > strong::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    top: -110px;
+    left: 50%;
+    display: block;
+    width: 1px;
+    margin: 0 0 10px;
+    /* background: #282828; */
+    background-image: linear-gradient(45deg, transparent 50%, #dadada 50%);
+    background-size: 1px 10px;
+    background-position: 0 0, 5px 5px;
+}
+.text_L {
+    width: 45%;
+    /* position: relative; */
+    float: left;
+    text-align: right;
+    height: 66px;
+    padding-top: 18px;
+}
+.text_R {
+    width: 45%;
+    /* position: relative; */
+    float: right;
+    text-align: left;
+    height: 66px;
+    padding-top: 10px;
+    position: relative;
+    padding-bottom: 110px;
+
+}
+.history_list > li > .text_R::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -43px;
+    left: -11%;
+    bottom: -92px;
+    width: 50vw;
+    min-width: 630px;
+    background-color: #fafafa;
+    z-index: -1;
+}
+.img_1::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg03.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 130px;
+    display: block;
+
+}
+.img_2::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg04.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 130px;
+    display: block;
+
+}
+.img_3::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg05.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 80%;
+    display: block;
+
+}
+
+.img_4::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg06.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 130px;
+    display: block;
+
+}
+.img_5::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg07.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 80%;
+    display: block;
+
+}
+.img_6::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg08.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 50px;
+    display: block;
+
+}
+.img_7::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg09.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 80%;
+    display: block;
+
+}
+.img_8::after {
+    background: url(https://www.hanwhasystems.com/resources/img/pc/content/history_bg10.png) no-repeat;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    content: ' ';
+    left: 130px;
+    display: block;
+
+}
+
+.eptitle > a {
+    text-decoration: none;
+    color: #000;
+}

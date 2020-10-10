@@ -1,0 +1,491 @@
+
+html, body, div, span, object, iframe, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary, h1, h2, h3, h4, h5, h6, p, blockquote,
+ pre, form, fieldset, legend, input, label,
+ button, textarea, select, textarea, input, table, caption, tbody, tfoot, thead, tr, th, td, b, i, dl, dt, dd, ol, ul, li, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+  small, strong, sub, sup, var, time, mark, audio, video, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans KR';
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary {
+    display: block;
+}
+
+body, select, input, button, textarea, button, pre {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {text-decoration:none; color:#000;}
+#content > .header {
+    position: relative;
+    min-width: 1200px;
+    height: 490px;
+    padding: 125px 0 0;
+    margin: -650px 0 160px;
+    text-align: center;
+    color: #fff;
+    z-index: 8;
+}
+
+
+
+
+#content[data-page^="0402"] > .header:before {
+   background-image: url(../img/visual_recruit02.jpg);
+}
+
+#content > .header h1, #content > .header > p:first-child > strong {
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-size: 50px;
+    line-height: 94px;
+    font-weight: bolder;
+}
+
+#content > .header h1 ~ p, #content > .header > p:first-child {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+
+#content > .header + .tit-sub1 {
+    margin-top: -10px;
+}
+
+
+
+#content > .header:before, #content > .header:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 490px;
+    width: 1920px;
+    margin: 0 0 0 -960px;
+    z-index: -1;
+}
+
+
+
+#content > .header + .tit-sub1 {
+    margin-top: -10px;
+}
+
+#content > .header:before {
+    background: #282828 url(../img/visual_basic.jpg) no-repeat 50% 100%;
+}
+
+#content > .header:after {
+    background: url(../img/visual.png) no-repeat 50% 100%;
+}
+
+
+#content {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+    padding: 650px 30px 455px;
+
+}
+
+
+#content > .header .txt-logo1 {
+    height: 28px;
+    padding: 0 0 0 83px;
+    background-position: -300px -314px;
+}
+
+#content > .header:after {
+    -webkit-animation: aniPattern1 10s ease-in-out both;
+    animation: aniPattern1 10s ease-in-out both;
+}
+@keyframes aniPattern1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.linemap {
+  position:absolute;
+  top:405px;
+  left:-80px;
+}
+.linemap > dt {
+    overflow: hidden;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.linemap > dd > ul > li {
+    padding: 0 30px;
+ }
+
+.linemap > dd > ul > li {
+    display: block;
+    float: left;
+}
+.linemap > dd > ul > li a{
+    color:#fff;
+}
+.nav-share > dt {
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    padding: 0 0 0 70px;
+    color: #959595;
+    white-space: nowrap;
+}
+///////////////////////////////////////////
+
+
+
+div[class*="tit-sub"] > *:first-child, [class*="tit-sub"]:not(div):not(dl), dl[class*="tit-sub"] > dt {
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+div.tit-sub1 > *:first-child, .tit-sub1:not(div), dl.tit-sub1 > dt {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+div[class*="tit-sub"] > *:first-child, [class*="tit-sub"]:not(div):not(dl), dl[class*="tit-sub"] > dt {
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+div.tit-sub1 > *:first-child, .tit-sub1:not(div), dl.tit-sub1 > dt {
+    font-size: 28px;
+    line-height: 48px;
+}
+
+div {
+    display: block;
+}
+
+
+body {
+    background: #fff;
+    line-height: 1.75;
+    color: #282828;
+    word-break: break-all;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+[class*="tit-sub"].line {
+    padding-bottom: 18px;
+    border-bottom: 2px solid #282828;
+}
+
+
+ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+/////////////////////////////////////////////
+.include-list:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    min-width: 1260px;
+    background: #fafafa;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.include-list > dl > dd:nth-child(2) > ol > li:nth-child(1) {
+    width: 211px;
+    background-position: 23px 0;
+}
+
+.include-list > dl > dd:nth-child(2) > ol > li:nth-child(2) {
+    width: 239px;
+    background-position: -188px 0;
+}
+
+.include-list > dl > dd:nth-child(2) > ol > li:nth-child(3) {
+    width: 279px;
+    background-position: -427px 0;
+}
+
+.include-list > dl > dd:nth-child(2) > ol > li:nth-child(4) {
+    width: 316px;
+    background-position: -706px 0;
+}
+
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(5) {
+    width: 263px;
+    background-position: -763px -281px;
+}
+
+
+.include-list > dl > dd:nth-child(2) + dt {
+    margin-top: 50px;
+}
+
+
+.include-list > dl > dd:nth-child(4) > ol {
+    margin-left: 10px;
+}
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(1) {
+    width: 158px;
+    background-position: 13px -281px;
+}
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(2) {
+    width: 179px;
+    background-position: -145px -281px;
+}
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(3) {
+    width: 201px;
+    background-position: -324px -281px;
+}
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(4) {
+    width: 238px;
+    background-position: -525px -281px;
+}
+
+
+.include-list > dl > dd:nth-child(4) > ol > li:nth-child(5) {
+    width: 263px;
+    background-position: -763px -281px;
+}
+
+.include-list > dl > dd > ol {
+    position: relative;
+}
+
+.include-list > dl > dd > ol > li {
+    display: inline-block;
+    float: left;
+    height: 281px;
+    background: url(../img/box_bg2.png) 0 0 no-repeat;
+    font-size: 18px;
+    line-height: 276px;
+    text-align: center;
+}
+
+.include-list > dl > dd > ol > li > span {
+    overflow: hidden;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+
+.include-list > dl > dd > ol:before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    right: -100%;
+    margin-top: -3px;
+    border-top: 1px dashed #dadada;
+    z-index: -1;
+}
+
+
+.include-list {
+    position: relative;
+    padding: 90px 0;
+}
+
+
+.include-list > dl > dd > ol:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.include-list > dl > dt {
+    font-size: 20px;
+    font-weight: bold;
+}
+//////////////////////////////////
+
+.tit-sub1 {
+    margin: 70px 0 20px;
+}
+
+.tit-sub1 ~ .tit-sub1 {
+    margin-top: 110px;
+}
+
+.tit-sub1 + .list-con4 {
+    margin-top: 75px;
+}
+
+
+///////////////////////////////////
+.list-con4 {
+    margin: 20px 0 0;
+}
+
+
+
+.list-con4 > ul > li {
+    position: relative;
+    display: inline-block;
+    width: 33.3%;
+    padding: 0 40px 40px;
+    vertical-align: top;
+}
+
+
+
+.list-con4.img-recruit2 > ul > li:nth-child(1):before {
+    background-position: 0 -200px;
+}
+
+.list-con4.img-recruit2 > ul > li:nth-child(2):before {
+    background-position: -150px -200px;
+}
+
+.list-con4.img-recruit2 > ul > li:nth-child(3):before {
+    background-position: -300px -200px;
+}
+.list-con4[class*=" img-"] > ul > li:before {
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 110px;
+    height: 110px;
+    background: url(../img/img_set2.png) no-repeat 100% 100%;
+}
+
+.list-con4 > ul > li:before, .list-con4 > ul > li:after {
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+.list-con4 > ul > li .tit {
+    display: block;
+    margin: 0 0 55px -37px;
+    font-family: 'Noto Sans KR';
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.list-con4 > ul > li .tit:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 6px;
+    height: 6px;
+    background: #ff6600;
+    border-radius: 50%;
+}
+
+.list-con4 > ul > li:after {
+    left: 3px;
+    top: 80px;
+    bottom: 0;
+    width: 1px;
+    background: #d2d2d2;
+}
+
+
+.list-con4 > ul > li:before, .list-con4 > ul > li:after {
+    content: '';
+    position: absolute;
+    display: block;
+}
+.list-con4 > ul {
+    overflow: hidden;
+    -ms-display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}

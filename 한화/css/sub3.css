@@ -1,0 +1,504 @@
+#content {
+    position: relative;
+    width: 1260px;
+    /*overflow:hidden;*/
+    margin: 0 auto;
+    /*padding: 770px 30px 455px;*/
+    padding: 650px 30px 455px;
+}
+
+
+
+  #content > .header {
+    position: relative;
+    min-width: 1200px;
+    height: 490px;
+    padding: 125px 0 0;
+    margin: -650px 0 160px;
+    text-align: center;
+    color: #fff;
+    z-index: 8;
+}
+
+
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary {
+    display: block;
+}
+
+html, body, div, span, object, iframe, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
+ section, main, summary, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, fieldset, legend, input, label, button, textarea, select,
+  textarea, input, table, caption, tbody, tfoot, thead, tr, th, td, b, i, dl, dt, dd, ol, ul, li, abbr, address, cite, code, del, dfn,
+   em, img, ins, kbd, q, samp, small, strong, sub, sup, var, time, mark, audio, video, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans KR';
+}
+a {text-decoration:none; color:#000;}
+#content[data-page^="0404"] > .header:before {
+    background-image: url(../img/visual_recruit04.jpg);
+}
+
+#content > .header h1, #content > .header > p:first-child > strong {
+    display: block;
+    font-family: 'Noto Sans KR';
+    font-size: 50px;
+    line-height: 94px;
+    font-weight: bolder;
+}
+
+#content > .header:before {
+    background: #282828 url(../img/visual_basic.jpg) no-repeat 50% 100%;
+}
+
+
+#content > .header #aside {
+    position: absolute;
+    left: 50%;
+    top: 420px;
+    width: 1260px;
+    margin: 0 0 0 -630px;
+    z-index: 8;
+}
+
+#content > .header #aside:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    min-width: 1260px;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.25);
+    z-index: -1;
+}
+
+#content > .header:before, #content > .header:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 490px;
+    width: 1920px;
+    margin: 0 0 0 -960px;
+    z-index: -1;
+}
+
+#content > .header:after {
+    background: url(../img/visual.png) no-repeat 50% 100%;
+    animation:aniPattern1 10s ease-in-out both;
+}
+@keyframes aniPattern1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.linemap {
+    position: relative;
+    margin: 0 auto;
+    height: 70px;
+    padding: 0 70px 0 0;
+}
+
+.linemap > dt {
+    overflow: hidden;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.linemap > dd {
+    text-align: left;
+}
+
+.linemap > dd > ul > li, .linemap > dd > ul > li > span {
+    font-size: 14px;
+    line-height: 70px;
+}
+
+
+.linemap > dd > ul > li {
+    padding: 0 30px;
+  }
+.linemap > dd > ul > li a {
+      color:#fff;
+}
+  .linemap > dd > ul > li {
+    display: block;
+    float: left;
+}
+ol, ul, li {
+    list-style: none;
+}
+
+.linemap > dd > ul > li.toggle {
+    padding: 0;
+}
+
+.linemap > dd > ul > li.toggle > span button:before {
+    width: 15px;
+    height: 15px;
+    margin: -7px 0 0;
+    background: url(../img/img_set1.png) no-repeat -40px -15px;
+}
+.linemap > dd > ul > li.toggle > span button:before, .linemap > dd > ul > li.toggle > span button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 25px;
+    top: 50%;
+}
+
+
+.linemap > dd > ul > li.toggle > span button:after {
+    width: 1px;
+    height: 10px;
+    margin: 0 7px 0 0;
+    background: #fff;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.nav-share:before {
+    -webkit-transform: rotate(35deg);
+    transform: rotate(30deg);
+    margin: 4px 0 0 -6px;
+}
+
+
+
+.tab-sub1.t1 {
+    margin: 0 0 120px;
+}
+
+.tab-sub1 {
+    position: relative;
+    margin: 0 0 30px;
+}
+
+
+.tab-sub1.t1 > ul {
+    border-spacing: 1px;
+    background: #dadada;
+}
+
+.tab-sub1 ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tab-sub1.t1 > ul > li, .tab-sub1.t1 > ul > li a {
+    height: 48px;
+    background: #fff;
+}
+
+.tab-sub1 > ul > li.active, .tab-sub1 > ul > li.active > a {
+    color: #fff;
+}
+
+.tab-sub1 > ul > li {
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.tab-sub1 ul > li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tab-sub1.t1 > ul > li.active > a {
+    height: calc(100% + 2px);
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    margin: -1px;
+}
+
+
+element.style {
+}
+.tab-sub1.t1 > ul > li.active > a {
+    height: calc(100% + 2px);
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    margin: -1px;
+}
+.tab-sub1.t1 > ul > li > a {
+    width: auto;
+}
+
+.tab-sub1 > ul > li:not(.active) > a {
+    background: #eee;
+}
+
+
+.tab-sub1 > ul > li > a {
+    position: relative;
+    padding: 6px 10px;
+    -ms-display: flex;
+    display: flex;
+    width: calc(100% - 1px);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.ui-tabcon.active {
+    display: block;
+}
+.hide {
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -1px !important;
+    top: -1px !important;
+    width: 1px !important;
+    height: 1px !important;
+    opacity: 0 !important;
+  }
+
+  .list-con1 > ul {
+      overflow: hidden;
+      -ms-display: flex;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+
+  .list-con1[class*=" icon-"] > ul > li {
+    min-height: 340px;
+    padding-left: 90px;
+    padding-right: 49px;
+    word-break: keep-all;
+}
+
+
+.linemap > dd > ul > li {
+    display: block;
+    float: left;
+}
+
+.list-con1 > ul > li {
+    position: relative;
+    float: left;
+    display: block;
+    width: 380px;
+    padding: 30px 39px 50px;
+    border: 1px solid #dadada;
+    vertical-align: top;
+    background: #fff;
+}
+
+
+.list-con1[class*=" icon-"] > ul > li > strong {
+    margin: -10px 0 20px -65px;
+    padding: 13px 0;
+    font-size: 26px;
+}
+
+.list-con1 > ul > li strong {
+    display: block;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+
+
+.list-con1[class*=" icon-"] > ul > li > strong:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: -13px 5px 55px 0;
+    background: url(../img/img_set2.png) no-repeat 0 -480px;
+}
+
+.list-con1 > ul > li > [data-area-scroll="true"] {
+    margin: 20px -15px 0 0;
+    max-height: 224px;
+}
+
+element.style {
+    max-height: 224px;
+  }
+
+
+  .list-con1 > ul > li > [data-area-scroll="true"] .mCustomScrollBox {
+    padding: 0 30px 0 0;
+}
+
+
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    /* outline: none; */
+    direction: ltr;
+}
+
+element.style {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+v
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.list-con1[class*=" icon-"] > ul > li {
+    min-height: 340px;
+    padding-left: 90px;
+    padding-right: 49px;
+    word-break: keep-all;
+}
+
+.list-con1 > ul > li:nth-child(3n-1) {
+    margin: 0 30px;
+}
+
+.list-con1 > ul > li {
+    position: relative;
+    float: left;
+    display: block;
+    width: 380px;
+    padding: 30px 39px 50px;
+    border: 1px solid #dadada;
+    vertical-align: top;
+    background: #fff;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+html, body, div, span, object, iframe, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main, summary, h1, h2, h3, h4, h5, h6, p, blockquote, pre, form, fieldset, legend, input, label, button, textarea, select, textarea, input, table, caption, tbody, tfoot, thead, tr, th, td, b, i, dl, dt, dd, ol, ul, li, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, time, mark, audio, video, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*user agent stylesheet*/
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+/*user agent stylesheet*/
+ul {
+    list-style-type: disc;
+}
+body, select, input, button, textarea, button, pre {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    background: #fff;
+    line-height: 1.75;
+    color: #282828;
+    word-break: break-all;
+}
+html {
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    overflow-y: scroll;
+    -ms-touch-action: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+.list-con1[class*=" icon-"] > ul > li > strong:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: -13px 5px 55px 0;
+    background: url(../img/img_set2.png) no-repeat 0 -480px;
+}
+﻿
+​.list-con1.icon-recruit1 > ul > li:nth-child(1) strong:before {
+    background-position: 0 -480px;
+}
+.list-con1.icon-recruit1 > ul > li:nth-child(2) strong:before {
+    background-position: -60px -480px;
+}
+.list-con1.icon-recruit1 > ul > li:nth-child(3) strong:before {
+    background-position: -120px -480px;
+}
+.list-con1.icon-recruit1 > ul > li:nth-child(4) strong:before {
+    background-position: -180px -480px;
+}
+
+.list-con1.icon-recruit1 > ul > li:nth-child(5) strong:before {
+    background-position: -240px -480px;
+}
+.list-con1.icon-recruit1 > ul > li:nth-child(6) strong:before {
+    background-position: -300px -480px;
+}
+
+
+
+.list-con1.icon-recruit2 > ul > li:nth-child(1) strong:before {
+    background-position: 0 -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(2) strong:before {
+    background-position: -60px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(3) strong:before {
+    background-position: -120px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(4) strong:before {
+    background-position: -180px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(5) strong:before {
+    background-position: -240px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(6) strong:before {
+    background-position: -300px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(7) strong:before {
+    background-position: -360px -540px;
+}
+.list-con1.icon-recruit2 > ul > li:nth-child(8) strong:before {
+    background-position: -420px -540px;
+}
+
+.list-con1.icon-recruit2 > ul > li:nth-child(9) strong:before {
+    background-position: -480px -540px;
+}
